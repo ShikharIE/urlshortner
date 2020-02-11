@@ -9,21 +9,21 @@ import javax.persistence.Table;
 public class Vendor {
     @Column
     private int id;
-    @Column
+    @Column(name="id")
     private String name;
-    @Column
+    @Column(name="email")
     private String email;
-    @Column
+    @Column(name="password")
     private String password;
-    @Column
+    @Column(name = "created_on")
     private String createdOn;
-    @Column
+    @Column(name="last_login")
     private String lastLogin;
-    @Column
+    @Column(name="api_key")
     private String apiKey;
-    @Column
+    @Column(name="api_secret")
     private String apiSecret;
-    @Column
+    @Column(name="status")
     private int status;
 
 

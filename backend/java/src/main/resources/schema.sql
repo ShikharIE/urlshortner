@@ -1,0 +1,22 @@
+CREATE DATABASE  IF NOT EXISTS shortner;
+USE shortner;
+
+CREATE TABLE vendor(
+id INT PRIMARY KEY ,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+password VARCHAR(100) NOT NULL,
+created_on VARCHAR(100) NOT NULL,
+last_login VARCHAR(100) NOT NULL,
+api_secret VARCHAR(30) NOT NULL,
+api_key VARCHAR(20) NOT NULL,
+status INT NOT NULL
+);
+
+CREATE TABLE urlmapper(
+short_url VARCHAR(10) PRIMARY KEY,
+long_url VARCHAR(200) NOT NULL,
+created_on VARCHAR(100) NOT NULL,
+meta VARCHAR(100) NOT NULL,
+user_id INT FOREIGN KEY REFERENCES Vendor(id) NOT NULL
+);
