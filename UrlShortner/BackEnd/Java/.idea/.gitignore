@@ -97,7 +97,7 @@ local.properties
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
+assa
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
