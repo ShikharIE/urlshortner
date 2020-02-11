@@ -7,14 +7,19 @@ import javax.persistence.Table;
 @Entity
 @Table(name="urlmapper")
 public class UrlMapper {
+
     @Column(name="short_url")
     private String shortUrl;
+
     @Column(name="long_url")
     private String longUrl;
+
     @Column(name="created_on")
     private String createdOn;
+
     @Column(name="meta")
     private String meta;
+
     @Column(name="user_id")
     private int userId;
 
