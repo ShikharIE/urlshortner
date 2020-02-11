@@ -11,6 +11,12 @@ public class UrlMapper {
     private String shortUrl;
     @Column(name="long_url")
     private String longUrl;
+    @Column(name="created_on")
+    private String createdOn;
+    @Column(name="meta")
+    private String meta;
+    @Column(name="user_id")
+    private int userId;
 
     public String getShortUrl() {
         return shortUrl;
@@ -51,13 +57,5 @@ public class UrlMapper {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-
-    @Column(name="created_on")
-    private String createdOn;
-    @Column(name="meta")
-    private String meta;
-    @Column(name="user_id")
-    private int userId;
-
 
 }
